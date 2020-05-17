@@ -66,7 +66,9 @@ module.exports = env => {
         minify: 'true'
       }),
       new webpack.DefinePlugin({
-        'process.env': {}
+        'process.env': {
+          'REACT_PUBLIC_URL': 'https://www.spiceroo.com'
+        }
       }),
       new CopyPlugin([{ from: 'public/site', to: 'site/' }])
     ],

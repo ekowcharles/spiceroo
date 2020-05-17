@@ -7,6 +7,8 @@ import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
+import logo from '../images/logo.png';
+
 const override = css`
   display: block;
   margin: 0 auto;
@@ -15,6 +17,14 @@ const override = css`
 
 const Header = props => {
   let loadingComponent = null;
+  let headerImage = null
+
+  let location = props.location.pathname;
+  if (location != "/") {
+    headerImage = <li className="header-logo" onClick={() => props.loadPage('/')}>
+      <img src={logo} alt="spiceroo-logo" />
+    </li>
+  }
 
   if (props.loading) {
     loadingComponent = (
@@ -35,6 +45,7 @@ const Header = props => {
     <div className="area-header">
       {loadingComponent}
       <ul className="page-headers">
+        {headerImage}
         <li className="pad-side-3">
           <div className="buy">
             <span>Buy <FontAwesomeIcon icon={faShoppingCart} color="#ffffff" /></span>

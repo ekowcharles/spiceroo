@@ -1,15 +1,15 @@
 ul.page-headers {
-  padding: 1em 1rem 0.7em 1rem;
+  padding: 16px;
   display: flex;
   list-style: none;
   align-items: center;
   color: $white;
   margin: 0 !important;
-  direction: rtl;
+  justify-content: space-between;
+  padding: 1em 1rem 0.7em 1rem;
 
   li {
     display: inline;
-    padding: 0 0.7rem;
   }
 
   input.search {
@@ -33,24 +33,12 @@ ul.page-headers {
     }
   }
 
-  li:nth-last-of-type(2) {
-    padding-right: 0.7em;
-    padding-left: 0.7em;
-  }
-
-  li:nth-of-type(1) {
-    padding-right: 0.7em;
-  }
-
-  li:nth-of-type(2) {
-    flex: 1;
-  }
-
   .buy {
     cursor: pointer;
     background-color: $primaryColor;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     color: $white;
     padding: 2px 10px;

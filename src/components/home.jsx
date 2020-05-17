@@ -1,7 +1,7 @@
 import React from 'react';
 
-import front from '../images/products/front.jpg';
-import back from '../images/products/back.jpg';
+import front from '../images/products/front.png';
+import back from '../images/products/back.png';
 
 import logo from '../images/logo.png';
 

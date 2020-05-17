@@ -1,5 +1,5 @@
 # spiceroo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0496a8c5-2070-4a2d-ade3-3b2c9434c720/deploy-status)](https://app.netlify.com/sites/xenodochial-mcnulty-aec7c9/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1b22bd38-d64c-4d9f-98a4-dbfa858c8fde/deploy-status)](https://app.netlify.com/sites/spiceroo)
 
 Spice Merchants

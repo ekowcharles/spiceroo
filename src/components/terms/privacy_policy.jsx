@@ -181,7 +181,7 @@ const PrivacyPolicy = props => {
         </p>
         <h4>SECURITY</h4>
         <p>
-          Spiceroo takes reasonable measures, including administrative,
+          Spiceroo LLC takes reasonable measures, including administrative,
           technical, and physical safeguards, including but not limited to SSL
           technology and tokenized payment information, to protect information
           about you from loss, theft, misuse, unauthorized access, disclosure,
@@ -230,7 +230,7 @@ const PrivacyPolicy = props => {
           visit www.aboutads.info/choices.
         </p>
         <h4>CHANGES TO THIS POLICY</h4>
-        Spiceroo may change this Policy from time to time. If we make changes,
+        Spiceroo LLC may change this Policy from time to time. If we make changes,
         we will notify you by revising the Effective Date above and, in some
         cases we may but are not required to provide you with more prominent
         notice (such as adding a statement to our homepage or sending you a

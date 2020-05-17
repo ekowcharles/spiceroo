@@ -8,7 +8,7 @@ const TermsOfService = props => {
         <h4>OVERVIEW</h4>
         <p>
           This website is operated by Spiceroo LLC. Throughout the site, the
-          terms “we”, “us” and “our” refer to Spiceroo LLC. Spiceroo offers this
+          terms “we”, “us” and “our” refer to Spiceroo LLC. Spiceroo LLC offers this
           website, including all information, tools and services available from
           this site to you, the user, conditioned upon your acceptance of all
           terms, conditions, policies and notices stated here
@@ -327,7 +327,7 @@ const TermsOfService = props => {
           purpose, durability, title, and non-infringement
         </p>
         <p>
-          In no case shall Spiceroo, our directors, officers, employees,
+          In no case shall Spiceroo LLC, our directors, officers, employees,
           affiliates, agents, contractors, interns, suppliers, service providers
           or licensors be liable for any injury, loss, claim, or any direct,
           indirect, incidental, punitive, special, or consequential damages of
@@ -349,7 +349,7 @@ const TermsOfService = props => {
 
         <h4>SECTION 14 - INDEMNIFICATION</h4>
         <p>
-          You agree to indemnify, defend and hold harmless Spiceroo and our
+          You agree to indemnify, defend and hold harmless Spiceroo LLC and our
           parent, subsidiaries, affiliates, partners, officers, directors,
           agents, contractors, licensors, service providers, subcontractors,
           suppliers, interns and employees, harmless from any claim or demand,

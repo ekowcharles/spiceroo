@@ -14,10 +14,6 @@ import PrivacyPolicy from './components/terms/privacy_policy';
 import NotFound from './components/not_found';
 import Home from './components/home';
 
-import { withCookies } from 'react-cookie';
-
-import CookieMessage from './components/cookie';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,10 +25,7 @@ class App extends Component {
       alertCallback: undefined,
       error: '',
       loading: false,
-      minimumPasswordLength: 7,
-      acceptCookie: this.getCookie('acc'),
-      loginToken: this.getCookie('tkn'),
-      refreshToken: this.getCookie('rsh')
+      minimumPasswordLength: 7
     };
   }
 
@@ -73,43 +66,6 @@ class App extends Component {
     return window.location.pathname;
   };
 
-  getCookie = name => {
-    return this.props.cookies.get(name, { path: '/' });
-  };
-
-  removeCookie = name => {
-    this.props.cookies.set(name, '', { path: '/' });
-    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-  };
-
-  setCookie = (name, value) => {
-    if (this.state.acceptCookie === true || name === 'acc') {
-      this.props.cookies.set(name, value, { path: '/' });
-    }
-  };
-
-  clearCookies = () => {
-    var cookies = document.cookie.split(';');
-    for (var i = 0; i < cookies.length; i++) {
-      var name = cookies[i].split('=')[0];
-      if (name.trim() !== '') {
-        this.props.cookies.remove(name);
-      }
-    }
-  };
-
-  acceptCookie = e => {
-    this.setCookie('acc', true);
-    this.setState({ acceptCookie: true });
-  };
-
-  rejectCookie = e => {
-    this.clearCookies();
-
-    this.setCookie('acc', true);
-    this.setState({ acceptCookie: false });
-  };
-
   showLoader = load => {
     this.setState({ loading: load });
   };
@@ -121,15 +77,6 @@ class App extends Component {
 
   render() {
     let cookieComponent = null;
-
-    if (this.state.acceptCookie === undefined) {
-      cookieComponent = (
-        <CookieMessage
-          acceptCookie={this.acceptCookie}
-          rejectCookie={this.rejectCookie}
-        />
-      );
-    }
 
     return (
       <React.Fragment>
@@ -203,4 +150,4 @@ class App extends Component {
   }
 }
 
-export default withCookies(withRouter(App));
+export default withRouter(App);

@@ -4,10 +4,10 @@ run:
 	npm start
 
 build:
-	PUBLIC_URL=https://www.spiceroo.com npm run build
+	PUBLIC_URL=https://www.spiceroo.com/ npm run build
 
 deploy:
-	PUBLIC_URL=https://www.spiceroo.com npm run build
+	PUBLIC_URL=https://www.spiceroo.com/ npm run build
 	netlify deploy --prod
 
 setup:
@@ -19,4 +19,4 @@ setup:
 
 all:
 	$(MAKE) setup
-	PUBLIC_URL=https://www.spiceroo.com npm run build
+	PUBLIC_URL=https://www.spiceroo.com/ npm run build

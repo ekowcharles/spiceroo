@@ -1,8 +1,7 @@
 import React from 'react';
 
-import front from '../images/products/front.png';
-import back from '../images/products/back.png';
-
+import front from '../images/front.png';
+import back from '../images/back.png';
 import logo from '../images/logo.png';
 
 const Home = () => {

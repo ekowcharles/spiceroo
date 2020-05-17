@@ -10,14 +10,13 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "braintree-web": "^2.32.1",
-    "react": "^16.8.6",
+    "react": "^16.13.0",
     "react-cookie": "^4.0.0",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.13.0",
     "react-places-autocomplete": "^7.2.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.1",
-    "react-spinners": "^0.5.4",
-    "react-stripe-elements": "^3.0.0"
+    "react-spinners": "^0.5.4"
   },
   "scripts": {
     "start": "react-scripts start",

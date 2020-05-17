@@ -66,17 +66,14 @@ module.exports = env => {
         favicon: './public/favicon.ico',
         minify: 'true'
       }),
-      new webpack.DefinePlugin({
-        'process.env': {
-          'NODE_ENV': JSON.stringify('production'),
-          'PUBLIC_URL': JSON.stringify('https://www.spiceroo.com'),
-          'REACT_PUBLIC_URL': JSON.stringify('https://www.spiceroo.com')
-        }
-      }),
       new CopyPlugin([{ from: 'public/site', to: 'site/' }])
     ],
     resolve: {
       extensions: ['.js', '.jsx']
-    }
+    },
+    output: {
+      path: path.resolve(__dirname, 'dist/'),
+      publicPath: '/'
+    },
   };
 };

@@ -63,7 +63,8 @@ module.exports = env => {
       new HtmlWebPackPlugin({
         template: path.resolve(__dirname, 'public', 'index.html'),
         filename: './index.html',
-        minify: 'true'
+        minify: 'true',
+        favicon: './src/favicon.ico'
       }),
       new webpack.DefinePlugin({
         'process.env': {

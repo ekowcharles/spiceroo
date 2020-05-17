@@ -11,7 +11,7 @@ const Home = () => {
       <div className="center">
         <small>Maiden Product</small>
         <p>
-          <span>Spiceroo&#8482; Ground Pepper</span>
+          <span>Spiceroo&#8482; Ground Black Pepper</span>
         </p>
       </div>
       <div className="product-images">

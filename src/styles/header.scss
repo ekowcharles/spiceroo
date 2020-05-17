@@ -47,6 +47,7 @@ ul.page-headers {
   }
 
   .buy {
+    cursor: pointer;
     background-color: $primaryColor;
     display: flex;
     justify-content: space-between;

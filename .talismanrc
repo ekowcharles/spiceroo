@@ -3,6 +3,9 @@ scopeconfig:
 
 fileignoreconfig:
 - filename: .env
-  checksum: 5e0931e9d19b03b1a0a0266a0b66c693c1ffcf060eabdfdb495351c12d0f64c6
+  checksum: bf69eb2fd85f44d33a043c2b6b3bcfec33f5508cb49a3444d1886f4173e9e6d2
+  ignore_detectors: []
+- filename: package-lock.json
+  checksum: 96a7d0bae1e787306e86fd4c32bddd9973df6c9822bd2f99cd5ff914381787e5
   ignore_detectors: []
 scopeconfig: []

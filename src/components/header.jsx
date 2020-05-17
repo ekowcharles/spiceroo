@@ -45,13 +45,13 @@ const Header = props => {
 
   return (
     <div className="area-header">
+      {loadingComponent}
       <ul className="page-headers">
         {adminProductsPage}
         <li className="pad-side-3">
-          <FontAwesomeIcon icon={faShoppingCart} />
+          <FontAwesomeIcon icon={faShoppingCart} color="#fe3e4d" />
         </li>
       </ul>
-      {loadingComponent}
     </div>
   );
 };

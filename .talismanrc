@@ -1,2 +1,8 @@
 scopeconfig:
   - scope: node
+
+fileignoreconfig:
+- filename: .env
+  checksum: 5e0931e9d19b03b1a0a0266a0b66c693c1ffcf060eabdfdb495351c12d0f64c6
+  ignore_detectors: []
+scopeconfig: []

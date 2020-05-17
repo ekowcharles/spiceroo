@@ -13,7 +13,6 @@
 
 .area-header {
   grid-area: search;
-  height: 3.4rem;
 }
 
 .area-not-found,
@@ -31,7 +30,7 @@
 .area-addresses,
 .area-login {
   grid-area: main;
-  padding: 2.66rem 1.33rem;
+  // padding: 2.66rem 1.33rem;
   margin: 0 auto;
   height: auto;
   width: 100%;
@@ -59,13 +58,32 @@
   padding: 0.68rem 0.31rem;
 }
 
-.area-home,
 .area-not-found {
   text-align: center;
   margin: auto 0;
   height: 300px;
   display: flex;
   align-items: center;
+}
+
+.area-home {
+  .product > img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.main-logo {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 36px;
+
+  & > img {
+    height: 80px;
+  }
 }
 
 .area-wordy {

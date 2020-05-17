@@ -45,6 +45,17 @@ ul.page-headers {
   li:nth-of-type(2) {
     flex: 1;
   }
+
+  .buy {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 2px 10px;
+    font-size: medium;
+    border-radius: 3px;
+  }
 }
 
 .svg-inline--fa {

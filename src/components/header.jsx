@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-
 import { css } from '@emotion/core';
 import { BarLoader } from 'react-spinners';
 import { withRouter } from 'react-router-dom';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const override = css`
   display: block;
@@ -15,7 +15,6 @@ const override = css`
 
 const Header = props => {
   let loadingComponent = null;
-  let adminProductsPage = null;
 
   if (props.loading) {
     loadingComponent = (
@@ -32,24 +31,14 @@ const Header = props => {
     );
   }
 
-  if (props.loggedIn) {
-    adminProductsPage = (
-      <li
-        className="pointer margin-right-24"
-        onClick={() => props.loadPage('/admin/products/all')}
-      >
-        Products
-      </li>
-    );
-  }
-
   return (
     <div className="area-header">
       {loadingComponent}
       <ul className="page-headers">
-        {adminProductsPage}
         <li className="pad-side-3">
-          <FontAwesomeIcon icon={faShoppingCart} color="#fe3e4d" />
+          <div className="buy">
+            <span>Buy <FontAwesomeIcon icon={faShoppingCart} color="#ffffff" /></span>
+          </div>
         </li>
       </ul>
     </div>

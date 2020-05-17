@@ -7,6 +7,7 @@ build:
 	PUBLIC_URL=https://www.spiceroo.com npm run build
 
 deploy:
+	PUBLIC_URL=https://www.spiceroo.com npm run build
 	netlify deploy
 
 setup:
@@ -19,4 +20,4 @@ all:
 	npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 	npm i sass-loader node-sass css-loader style-loader url-loader file-loader --save-dev
 	npm audit fix
-	npm run build
+	PUBLIC_URL=https://www.spiceroo.com npm run build

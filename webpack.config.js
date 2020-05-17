@@ -63,13 +63,8 @@ module.exports = env => {
       new HtmlWebPackPlugin({
         template: path.resolve(__dirname, 'public', 'index.html'),
         filename: './index.html',
-        minify: 'true',
-        favicon: './src/favicon.ico'
-      }),
-      new webpack.DefinePlugin({
-        'process.env': {
-          'REACT_PUBLIC_URL': 'https://www.spiceroo.com'
-        }
+        favicon: path.resolve(__dirname, 'public', 'site', 'index.html'),
+        minify: 'true'
       }),
       new CopyPlugin([{ from: 'public/site', to: 'site/' }])
     ],

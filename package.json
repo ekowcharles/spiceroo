@@ -2,7 +2,7 @@
   "name": "spiceroo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spiceroo.com",
+  "homepage": "https://www.spiceroo.com",
   "dependencies": {
     "@babel/runtime": "^7.4.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.18",

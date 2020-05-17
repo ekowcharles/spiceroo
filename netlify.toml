@@ -1,7 +1,7 @@
 [build]
-  base = "fend/"
+  base = "/"
   command = "make build"
-  publish = "fend/dist/"
+  publish = "dist/"
 
 [[redirects]]
   from = "/*"

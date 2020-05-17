@@ -18,12 +18,15 @@ const override = css`
 const Header = props => {
   let loadingComponent = null;
   let headerImage = null
+  let justifyHeader = "end"
 
   let location = props.location.pathname;
-  if (location != "/") {
+  if (location !== "/") {
     headerImage = <li className="header-logo" onClick={() => props.loadPage('/')}>
       <img src={logo} alt="spiceroo-logo" />
     </li>
+
+    justifyHeader = ""
   }
 
   if (props.loading) {
@@ -44,7 +47,7 @@ const Header = props => {
   return (
     <div className="area-header">
       {loadingComponent}
-      <ul className="page-headers">
+      <ul className={`page-headers ${justifyHeader}`}>
         {headerImage}
         <li className="pad-side-3">
           <div className="buy">

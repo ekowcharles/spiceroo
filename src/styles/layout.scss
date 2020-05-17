@@ -94,3 +94,8 @@
     font-size: 0.9em;
   }
 }
+
+.main-layout,
+.social-layout {
+  background-color: $pageBackgroundColor !important;
+}

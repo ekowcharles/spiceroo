@@ -1,7 +1,5 @@
 import React from 'react';
 
-import front from '../images/front.png';
-import back from '../images/back.png';
 import logo from '../images/logo.png';
 
 const Home = () => {
@@ -18,10 +16,10 @@ const Home = () => {
       </div>
       <div className="product-images">
         <div className="product">
-          <img src={front} alt="spiceroo-ground-pepper-front" />
+          <img src="https://spiceroo.s3.amazonaws.com/front.jpg" alt="spiceroo-ground-pepper-front" />
         </div>
         <div className="product">
-          <img src={back} alt="spiceroo-ground-pepper-back" />
+          <img src="https://spiceroo.s3.amazonaws.com/back.jpg" alt="spiceroo-ground-pepper-back" />
         </div>
       </div>
     </div>

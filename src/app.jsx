@@ -6,7 +6,6 @@ import Header from './components/header';
 import Social from './components/social';
 import Alert from './components/alert';
 
-import Banner from './components/banner';
 import Footer from './components/footer';
 
 import TermsOfService from './components/terms/terms_of_service';
@@ -29,7 +28,6 @@ class App extends Component {
       alertStatus: undefined,
       alertCallback: undefined,
       error: '',
-      banneredPages: [],
       loading: false,
       minimumPasswordLength: 7,
       acceptCookie: this.getCookie('acc'),
@@ -38,7 +36,7 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   triggerAlert = (al, pg, cb) => {
     this.setState({
@@ -122,13 +120,7 @@ class App extends Component {
   };
 
   render() {
-    let location = this.props.location.pathname;
-    let bannerComponent = null;
     let cookieComponent = null;
-
-    if (this.state.banneredPages.includes(location.split('/')[1])) {
-      bannerComponent = <Banner />;
-    }
 
     if (this.state.acceptCookie === undefined) {
       cookieComponent = (
@@ -154,8 +146,6 @@ class App extends Component {
               />
             )}
           />
-
-          {bannerComponent}
 
           <Switch>
             <Route

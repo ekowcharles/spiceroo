@@ -1,8 +1,8 @@
 @mixin big-device {
-  .area-banner {
-    img {
-      margin-top: -18rem;
-    }
+  .product-images {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
   }
 
   .main-layout {
@@ -13,7 +13,6 @@
       'search search search search search search'
       'spinner spinner spinner spinner spinner spinner'
       '. product product product product .'
-      'banner banner banner banner banner banner'
       '. main main main main .'
       '. . aheader aheader aheader .'
       '. amenu acontent1 acontent1 acontent1 .'
@@ -78,12 +77,6 @@
 }
 
 @mixin small-device {
-  .area-banner {
-    img {
-      margin-top: -3rem;
-    }
-  }
-
   .main-layout {
     display: grid;
     grid-template-columns: auto;
@@ -92,7 +85,6 @@
       'search'
       'spinner'
       'product'
-      'banner'
       'main';
   }
 

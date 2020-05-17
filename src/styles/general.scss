@@ -1,0 +1,237 @@
+h1 {
+  color: $primaryColor;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.smaller {
+  font-size: 0.85em;
+}
+
+.smallest {
+  font-size: 0.8em;
+}
+
+.big {
+  font-size: 1em;
+}
+
+.light {
+  color: $defaultDeepColor;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.padding-top-10 {
+  padding-top: 2em;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 0.3em;
+}
+
+.margin-top-36 {
+  margin-top: 36px;
+}
+
+.flex {
+  display: flex;
+}
+
+.right {
+  text-align: right;
+}
+
+.gone {
+  display: none;
+}
+
+.appear {
+  display: inline-block;
+}
+
+.red {
+  color: $red !important;
+}
+
+.button-area-center,
+.button-area {
+  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 3em;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  &.spread {
+    justify-content: space-between !important;
+  }
+
+  .button {
+    height: 2.3em;
+    border-radius: 2em;
+    min-width: 8em;
+    margin-left: 0.8em;
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+
+    &.ok {
+      background-color: $primaryDeepColor;
+      color: $white;
+      border: 1px solid $primaryDeepColor;
+    }
+
+    &.cancel {
+      background-color: $white;
+      color: $primaryDeepColor;
+      border: 1px solid $primaryDeepColor;
+    }
+
+    &.danger {
+      background-color: $red;
+      color: $white;
+      border: 1px solid $red;
+    }
+
+    &.disabled {
+      background-color: $defaultSuperDeepDeepColor !important;
+      color: $white !important;
+      border: 1px solid $defaultSuperDeepDeepColor !important;
+    }
+  }
+}
+
+.button-area-center {
+  text-align: center;
+
+  display: block;
+}
+
+.no-left-margin {
+  margin-left: 0 !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.margin-top-24 {
+  margin-top: 24px !important;
+}
+
+.margin-right-24 {
+  margin-right: 24px !important;
+}
+
+.margin-top-36 {
+  margin-top: 36px !important;
+}
+
+.clickable {
+  color: $clickableColor;
+}
+
+.center {
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+a.white-link {
+  text-decoration: none;
+  color: $white;
+
+  &:visited,
+  &:link,
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.primary-link {
+  text-decoration: none;
+  color: $primaryDeepColor;
+}
+
+@font-face {
+  font-family: FuturaLight;
+  font-style: normal;
+  src: url('./fonts/FuturaLightRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: FuturaBook;
+  font-style: normal;
+  src: url('./fonts/FuturaBookRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: AvenirLight;
+  font-weight: 400;
+  src: url('./fonts/Avenir-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvenirRegular;
+  font-weight: 400;
+  src: url('./fonts/Avenir-Regular.otf') format('opentype');
+}
+
+h5,
+h6 {
+  font-family: AvenirRegular !important;
+  font-size: 1.2em !important;
+  color: $primaryDeepColor;
+
+  animation-name: slide;
+  animation-duration: 1s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h6 {
+  font-size: 1em !important;
+}
+
+@keyframes slide {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: AvenirLight, FuturaLight, Verdana, Geneva, Tahoma, sans-serif !important;
+  background-color: #fffefe !important;
+  font-size: 1.1em;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: $red;
+  margin-top: 3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+dl {
+  margin-bottom: 60px;
+}

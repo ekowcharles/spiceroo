@@ -1,0 +1,111 @@
+.roo-alert {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 120px 50px;
+  grid-template-areas:
+    'icon'
+    'message'
+    'buttonArea';
+
+  position: absolute;
+  text-align: center;
+  background-color: $white;
+
+  z-index: 1000;
+
+  .icon {
+    z-index: 100;
+    grid-area: icon;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .icon-info {
+    border-bottom-color: #0c7c59;
+  }
+
+  .icon-warn {
+    border-bottom-color: #dbd053;
+  }
+
+  .icon-error {
+    border-bottom-color: #d64933;
+  }
+
+  .icon-type {
+    fill: $white;
+    z-index: 5;
+    font-size: 1.7rem;
+    font-family: 'FuturaLight';
+  }
+
+  .message {
+    grid-area: message;
+    margin: auto 0;
+    padding: 12px 12px 0 12px;
+    background-color: $white;
+  }
+
+  .btn-area {
+    grid-area: buttonArea;
+    border-top: 0.06rem solid $defaultLightColor;
+
+    .accept {
+      padding: 1em;
+      border-radius: 0;
+      border-width: 0;
+      color: $defaultDeepDeepColor;
+    }
+
+    .reject {
+      border-radius: 0;
+      border-width: 0;
+      padding: 1em;
+      color: $defaultDeepDeepColor;
+      border-left: 0.06rem solid $defaultLightColor;
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    .half {
+      width: 50%;
+    }
+  }
+
+  button {
+    font-size: 0.9em;
+    color: $primaryDeepColor;
+    background-color: $defaultLightLightColor;
+    text-align: center;
+  }
+
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+
+  &.collapsed {
+    height: 0;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  opacity: 1;
+  height: 0;
+
+  &.launched {
+    height: 220px;
+
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}

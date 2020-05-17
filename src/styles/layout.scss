@@ -1,0 +1,83 @@
+.area-banner {
+  grid-area: banner;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 10rem;
+
+  img {
+    width: 100%;
+    z-index: -2;
+  }
+}
+
+.area-header {
+  grid-area: search;
+  height: 3.4rem;
+}
+
+.area-not-found,
+.area-home,
+.area-full-page,
+.area-pay,
+.area-wordy,
+.area-subscribe,
+.area-card,
+.area-confirm-email,
+.area-change-password,
+.area-reset-password,
+.area-forgotten-password,
+.area-user-details,
+.area-addresses,
+.area-login {
+  grid-area: main;
+  padding: 2.66rem 1.33rem;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+.area-social {
+  grid-area: social;
+  padding: 1.33rem;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+.area-profile-header,
+.area-products {
+  grid-area: product;
+}
+
+.area-footer {
+  color: $defaultDeepDeepColor;
+  background-color: $defaultLightLightColor;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid $defaultLightColor;
+  padding: 0.68rem 0.31rem;
+}
+
+.area-home,
+.area-not-found {
+  text-align: center;
+  margin: auto 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.area-wordy {
+  p {
+    text-align: justify;
+  }
+
+  h3 {
+    color: $primaryDeepColor;
+  }
+
+  h4 {
+    margin-top: 36px !important;
+  }
+}

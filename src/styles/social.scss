@@ -1,0 +1,40 @@
+.card {
+  text-align: center;
+
+  border: none;
+
+  border-top: 1px solid $defaultLightColor !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  background-color: $white;
+
+  ul {
+    padding: 0 0 1em 0;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content: space-between;
+
+    li {
+      text-align: center;
+      display: inline;
+      padding: 0.3em 1em;
+    }
+
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .follow {
+    padding: 1em 0 0 0;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .follow-text {
+    padding-bottom: 0.7em;
+  }
+}

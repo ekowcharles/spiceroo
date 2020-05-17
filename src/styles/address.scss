@@ -1,0 +1,87 @@
+.area-addresses {
+  .address {
+    margin-top: $alignmentPadding;
+    margin-bottom: 24px;
+    background-color: $white;
+
+    border: 1px solid $defaultLightColor;
+    border-radius: 0.1rem;
+
+    .area-main {
+      padding: $alignmentPadding;
+    }
+
+    .area-footer {
+      padding: $alignmentPadding;
+      text-align: right !important;
+      border-bottom: 1px solid $defaultLightColor;
+
+      span {
+        padding-left: $alignmentPadding;
+      }
+
+      span:last-of-type {
+        color: $red;
+      }
+    }
+  }
+
+  .address-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 8px;
+    color: $primaryDeepColor;
+
+    h5 {
+      margin-bottom: 0;
+    }
+
+    svg:last-of-type {
+      margin-left: 18px;
+    }
+  }
+
+  .selection {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border: none !important;
+
+    .area-main {
+      padding: $alignmentPadding 24px;
+      width: 100%;
+      border: 1px solid $defaultLightColor !important;
+      border-radius: 0.1rem;
+    }
+
+    .md-radio {
+      label {
+        padding: 0 12px !important;
+      }
+    }
+
+    .md-checkbox {
+      label {
+        padding: 0 12px !important;
+      }
+    }
+  }
+}
+
+.collapse {
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+
+  height: 0px;
+  opacity: 1;
+}

@@ -11,6 +11,10 @@ ul.page-headers {
   justify-content: space-between;
   padding: 1em 1rem 0.7em 1rem;
 
+  a {
+    text-decoration: none;
+  }
+
   li {
     display: inline;
   }

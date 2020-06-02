@@ -50,9 +50,11 @@ const Header = props => {
       <ul className={`page-headers ${justifyHeader}`}>
         {headerImage}
         <li className="pad-side-3">
-          <div className="buy">
-            <span>Buy <FontAwesomeIcon icon={faShoppingCart} color="#ffffff" /></span>
-          </div>
+          <a href="https://shop.spiceroo.com/collections/spiceroo%E2%84%A2-ground-black-pepper/products/spiceroo%E2%84%A2-ground-black-pepper">
+            <div className="buy">
+              <span>Buy <FontAwesomeIcon icon={faShoppingCart} color="#ffffff" /></span>
+            </div>
+          </a>
         </li>
       </ul>
     </div>

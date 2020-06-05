@@ -1,5 +1,6 @@
 import React from 'react';
 import facebook from '../images/social/facebook.svg';
+import instagram from '../images/social/instagram.svg';
 import twitter from '../images/social/twitter.svg';
 import pinterest from '../images/social/pinterest.svg';
 
@@ -17,6 +18,15 @@ const Social = () => {
               rel="noopener noreferrer"
             >
               <img src={facebook} alt="facebook" />
+            </a>
+          </li>
+          <li className="col-sm-3">
+            <a
+              href="https://www.instagram.com/spice.roo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} alt="instagram" />
             </a>
           </li>
           <li className="col-sm-3">
